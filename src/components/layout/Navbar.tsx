@@ -21,8 +21,8 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="font-display text-2xl font-bold">
-            <span className="text-gradient">Dev</span>
-            <span className="text-foreground">Portfolio</span>
+            <span className="text-gradient">Saifur</span>
+            <span className="text-foreground"> Rehman</span>
           </Link>
 
           {/* Desktop Navigation */}

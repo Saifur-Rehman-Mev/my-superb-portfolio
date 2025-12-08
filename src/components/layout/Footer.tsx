@@ -15,8 +15,8 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo */}
           <Link to="/" className="font-display text-xl font-bold">
-            <span className="text-gradient">Dev</span>
-            <span className="text-foreground">Portfolio</span>
+            <span className="text-gradient">Saifur</span>
+            <span className="text-foreground"> Rehman</span>
           </Link>
 
           {/* Social Links */}
