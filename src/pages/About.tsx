@@ -15,22 +15,10 @@ const skills = [
 
 const experience = [
   {
-    title: "Senior Web Developer",
-    company: "Tech Solutions Inc.",
-    period: "2022 - Present",
-    description: "Leading frontend development team, implementing modern web solutions.",
-  },
-  {
-    title: "Full Stack Developer",
-    company: "Digital Agency",
-    period: "2020 - 2022",
-    description: "Developed full-stack applications for various clients across industries.",
-  },
-  {
-    title: "Junior Developer",
-    company: "Startup Hub",
-    period: "2018 - 2020",
-    description: "Started my journey building web applications and learning best practices.",
+    title: "Freelance Web Developer",
+    company: "Self-Employed",
+    period: "July 2025 - Present",
+    description: "Building modern web applications and websites for clients worldwide. Specializing in React, Next.js, and full-stack development.",
   },
 ];
 
