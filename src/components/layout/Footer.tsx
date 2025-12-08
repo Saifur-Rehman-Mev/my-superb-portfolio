@@ -1,11 +1,11 @@
-import { Github, Linkedin, Twitter, Mail } from "lucide-react";
+import { Github, Linkedin, Mail, BookOpen } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
   const socialLinks = [
-    { icon: Github, href: "https://github.com", label: "GitHub" },
-    { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-    { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
+    { icon: Github, href: "https://github.com/Saifur-Rehman-Mev", label: "GitHub" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/saifur-rehman-mev-9384b6298/", label: "LinkedIn" },
+    { icon: BookOpen, href: "https://hashnode.com/@SaifurRehmanMev", label: "Blog" },
     { icon: Mail, href: "mailto:hello@example.com", label: "Email" },
   ];
 
