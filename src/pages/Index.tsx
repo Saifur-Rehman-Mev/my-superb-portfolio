@@ -82,7 +82,7 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 relative z-10">
+      <section className="py-12 relative z-10">
         <div className="container mx-auto px-6">
           <div className="glass-card rounded-3xl p-12 md:p-16 text-center relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-primary/5" />
