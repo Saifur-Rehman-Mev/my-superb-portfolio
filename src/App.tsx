@@ -8,6 +8,7 @@ import Portfolio from "./pages/Portfolio";
 import Freelance from "./pages/Freelance";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Testimonial from "./pages/Testimonial";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -20,10 +21,14 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Portfolio />} />
+          <Route path="/service" element={<Freelance />} />
+          <Route path="/testimonial" element={<Testimonial />} />
+          <Route path="/contact" element={<Contact />} />
+          {/* Legacy routes redirect */}
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/freelance" element={<Freelance />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

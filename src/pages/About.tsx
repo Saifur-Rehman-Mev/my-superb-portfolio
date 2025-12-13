@@ -1,16 +1,16 @@
-import { Download, Briefcase, GraduationCap, Award } from "lucide-react";
+import { Download, Briefcase } from "lucide-react";
 import Layout from "@/components/layout/Layout";
 import FloatingShapes from "@/components/ui/FloatingShapes";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 
 const skills = [
+  { name: "JavaScript", level: 95 },
   { name: "React / Next.js", level: 95 },
   { name: "TypeScript", level: 90 },
   { name: "Node.js / Express", level: 85 },
   { name: "MongoDB / PostgreSQL", level: 80 },
   { name: "Tailwind CSS", level: 95 },
-  { name: "Python / Django", level: 75 },
 ];
 
 const experience = [
@@ -36,7 +36,7 @@ const About = () => {
               <div className="relative rounded-2xl overflow-hidden">
                 <img
                   src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=700&fit=crop"
-                  alt="Developer"
+                  alt="Saifur Rehman"
                   className="w-full h-auto object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
@@ -45,7 +45,7 @@ const About = () => {
               {/* Floating badge */}
               <div className="absolute -bottom-6 -right-6 glass-card rounded-2xl p-6 animate-float">
                 <p className="text-4xl font-display font-bold text-gradient">5+</p>
-                <p className="text-muted-foreground">Years Experience</p>
+                <p className="text-muted-foreground">Months Experience</p>
               </div>
             </div>
             
@@ -55,10 +55,10 @@ const About = () => {
                 About Me
               </p>
               <h1 className="section-title mb-6 animate-slide-up">
-                Passionate <span className="text-gradient">Developer</span>
+                Hi, I'm <span className="text-gradient">Saifur Rehman</span>
               </h1>
               <p className="text-lg text-muted-foreground mb-6 animate-slide-up-delayed">
-                I'm a software and web developer with over 5 years of experience creating 
+                I'm a passionate web developer creating 
                 beautiful, functional, and user-friendly websites and applications.
               </p>
               <p className="text-lg text-muted-foreground mb-8 animate-slide-up-delayed" style={{ animationDelay: "0.3s" }}>
