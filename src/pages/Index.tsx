@@ -25,7 +25,7 @@ const Index = () => {
               </p>
             </div>
             
-            <h1 className="hero-title mb-6 animate-slide-up">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight mb-6 animate-slide-up">
               <span className="block">Hi, I'm <span className="text-gradient">Saifur Rehman</span></span>
               <span className="block">Building Digital</span>
               <span className="text-gradient">Experiences</span>
