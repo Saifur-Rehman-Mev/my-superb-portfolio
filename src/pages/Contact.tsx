@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Github, Linkedin, BookOpen } from "lucide-react";
 import Layout from "@/components/layout/Layout";
 import FloatingShapes from "@/components/ui/FloatingShapes";
 import { Button } from "@/components/ui/button";
@@ -11,27 +11,27 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email",
-    value: "hello@developer.com",
-    href: "mailto:hello@developer.com",
+    value: "saifurrehmanmev@gmail.com",
+    href: "mailto:saifurrehmanmev@gmail.com",
   },
   {
     icon: Phone,
     title: "Phone",
-    value: "+91 98765 43210",
-    href: "tel:+919876543210",
+    value: "+91 9081741205",
+    href: "tel:+919081741205",
   },
   {
     icon: MapPin,
     title: "Location",
-    value: "Mumbai, India",
+    value: "Ahmedabad, India",
     href: "#",
   },
 ];
 
 const socialLinks = [
-  { icon: Github, href: "https://github.com", label: "GitHub" },
-  { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-  { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
+  { icon: Github, href: "https://github.com/Saifur-Rehman-Mev", label: "GitHub" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/saifur-rehman-mev-9384b6298/", label: "LinkedIn" },
+  { icon: BookOpen, href: "https://hashnode.com/@SaifurRehmanMev", label: "Blog" },
 ];
 
 const Contact = () => {
@@ -45,9 +45,17 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Create mailto link with form data
+    const mailtoLink = `mailto:saifurrehmanmev@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+    )}`;
+    
+    window.open(mailtoLink, '_blank');
+    
     toast({
-      title: "Message Sent!",
-      description: "Thank you for reaching out. I'll get back to you soon!",
+      title: "Opening Email Client",
+      description: "Your default email app should open with the message. Thank you for reaching out!",
     });
     setFormData({ name: "", email: "", subject: "", message: "" });
   };

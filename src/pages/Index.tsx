@@ -1,4 +1,4 @@
-import { ArrowRight, Code2, Palette, Rocket } from "lucide-react";
+import { ArrowRight, Code2, Palette, Rocket, BookOpen } from "lucide-react";
 import { Link } from "react-router-dom";
 import Layout from "@/components/layout/Layout";
 import FloatingShapes from "@/components/ui/FloatingShapes";
@@ -26,6 +26,7 @@ const Index = () => {
             </div>
             
             <h1 className="hero-title mb-6 animate-slide-up">
+              <span className="block">Hi, I'm <span className="text-gradient">Saifur Rehman</span></span>
               <span className="block">Building Digital</span>
               <span className="text-gradient">Experiences</span>
             </h1>
@@ -36,7 +37,7 @@ const Index = () => {
             </p>
             
             <div className="flex flex-wrap gap-4 animate-slide-up-delayed" style={{ animationDelay: "0.4s" }}>
-              <Link to="/portfolio">
+              <Link to="/projects">
                 <Button size="lg" className="group font-display font-semibold">
                   View My Work
                   <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
@@ -98,6 +99,33 @@ const Index = () => {
                   <ArrowRight className="ml-2" size={20} />
                 </Button>
               </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Blog CTA Section */}
+      <section className="py-24 relative z-10">
+        <div className="container mx-auto px-6">
+          <div className="glass-card rounded-3xl p-12 md:p-16 text-center relative overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-primary/5" />
+            <div className="relative z-10">
+              <div className="w-20 h-20 mx-auto mb-8 rounded-2xl bg-primary/10 flex items-center justify-center">
+                <BookOpen size={40} className="text-primary" />
+              </div>
+              <h2 className="section-title mb-6">
+                Read My <span className="text-gradient">Blogs</span> Here
+              </h2>
+              <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
+                I write about programming, web development, and technology. Sharing my knowledge and experiences 
+                through articles on JavaScript, React, Node.js, and more.
+              </p>
+              <a href="https://hashnode.com/@SaifurRehmanMev" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" className="font-display font-semibold">
+                  Visit My Blog
+                  <ArrowRight className="ml-2" size={20} />
+                </Button>
+              </a>
             </div>
           </div>
         </div>

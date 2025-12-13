@@ -9,7 +9,7 @@ const freelanceProjects = [
     id: 1,
     title: "Central Auto Zone",
     description: "A professional auto parts e-commerce website with product catalog, search functionality, and modern UI.",
-    tags: ["Web Development", "E-Commerce", "UI/UX"],
+    tags: ["TypeScript", "React", "Supabase", "Auth.js"],
     image: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800&h=600&fit=crop",
     liveUrl: "https://centralautozone.com/",
   },

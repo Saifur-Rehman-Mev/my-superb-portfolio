@@ -1,4 +1,4 @@
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github, ArrowRight } from "lucide-react";
 import Layout from "@/components/layout/Layout";
 import FloatingShapes from "@/components/ui/FloatingShapes";
 import { Button } from "@/components/ui/button";
@@ -6,39 +6,28 @@ import { Button } from "@/components/ui/button";
 const projects = [
   {
     id: 1,
-    title: "E-Commerce Platform",
-    description: "A full-stack e-commerce solution with payment integration, inventory management, and admin dashboard.",
-    tags: ["React", "Node.js", "MongoDB", "Stripe"],
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop",
-    liveUrl: "#",
-    githubUrl: "#",
+    title: "HavenStay",
+    description: "A full-stack hotel booking website with authorization and authentication. Users can browse hotels, make reservations, and manage their bookings securely.",
+    tags: ["JavaScript", "Node.js", "Express.js", "EJS", "Tailwind"],
+    image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop",
+    githubUrl: "https://github.com/Saifur-Rehman-Mev/HavenStay",
   },
   {
     id: 2,
-    title: "Task Management App",
-    description: "A collaborative task management tool with real-time updates, team features, and analytics.",
-    tags: ["Next.js", "TypeScript", "Prisma", "PostgreSQL"],
-    image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=600&fit=crop",
-    liveUrl: "#",
-    githubUrl: "#",
+    title: "NodeXpressDB",
+    description: "A CRUD application where every user can post, update, delete, or view their data. Simple and effective data management system.",
+    tags: ["JavaScript", "Node.js", "Express.js", "Bootstrap"],
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
+    githubUrl: "https://github.com/Saifur-Rehman-Mev/NodeXpressDB",
   },
   {
     id: 3,
-    title: "Social Media Dashboard",
-    description: "Analytics dashboard for social media management with data visualization and scheduling.",
-    tags: ["React", "D3.js", "Firebase", "Tailwind"],
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
-    liveUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    id: 4,
-    title: "AI Chat Application",
-    description: "Real-time chat application powered by AI with smart responses and conversation history.",
-    tags: ["React", "OpenAI", "Socket.io", "Express"],
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop",
-    liveUrl: "#",
-    githubUrl: "#",
+    title: "Netflix Clone",
+    description: "A Netflix clone currently under development. Building a modern streaming platform UI with React and modern web technologies.",
+    tags: ["React.js", "Tailwind", "Redux Toolkit", "React Router"],
+    image: "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?w=800&h=600&fit=crop",
+    githubUrl: "https://github.com/Saifur-Rehman-Mev/Netflix-clone",
+    inProgress: true,
   },
 ];
 
@@ -67,7 +56,7 @@ const Portfolio = () => {
       {/* Projects Grid */}
       <section className="pb-24 relative z-10">
         <div className="container mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
               <div
                 key={project.id}
@@ -75,7 +64,7 @@ const Portfolio = () => {
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {/* Image */}
-                <div className="relative h-64 overflow-hidden">
+                <div className="relative h-56 overflow-hidden">
                   <img
                     src={project.image}
                     alt={project.title}
@@ -83,18 +72,19 @@ const Portfolio = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
                   
+                  {/* In Progress Badge */}
+                  {project.inProgress && (
+                    <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-primary/90 text-primary-foreground text-sm font-medium">
+                      In Progress
+                    </div>
+                  )}
+                  
                   {/* Overlay Actions */}
                   <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                      <Button size="sm" className="font-display">
-                        <ExternalLink size={16} className="mr-2" />
-                        Live Demo
-                      </Button>
-                    </a>
                     <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                      <Button size="sm" variant="outline" className="bg-background/80">
+                      <Button size="sm" className="font-display">
                         <Github size={16} className="mr-2" />
-                        Code
+                        View Code
                       </Button>
                     </a>
                   </div>
@@ -105,14 +95,14 @@ const Portfolio = () => {
                   <h3 className="font-display text-2xl font-bold mb-3 group-hover:text-primary transition-colors">
                     {project.title}
                   </h3>
-                  <p className="text-muted-foreground mb-4">
+                  <p className="text-muted-foreground mb-4 text-sm">
                     {project.description}
                   </p>
                   <div className="flex flex-wrap gap-2">
                     {project.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="px-3 py-1 text-sm rounded-full bg-primary/10 text-primary border border-primary/20"
+                        className="px-3 py-1 text-xs rounded-full bg-primary/10 text-primary border border-primary/20"
                       >
                         {tag}
                       </span>
@@ -121,6 +111,25 @@ const Portfolio = () => {
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* View More Projects */}
+          <div className="text-center mt-16">
+            <div className="glass-card inline-block rounded-2xl p-8 glow-effect">
+              <h3 className="font-display text-2xl font-bold mb-4">
+                Want to See <span className="text-gradient">More Projects?</span>
+              </h3>
+              <p className="text-muted-foreground mb-6">
+                Check out my GitHub profile for more projects and contributions.
+              </p>
+              <a href="https://github.com/Saifur-Rehman-Mev" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" className="font-display font-semibold">
+                  <Github size={20} className="mr-2" />
+                  View More Projects
+                  <ArrowRight className="ml-2" size={20} />
+                </Button>
+              </a>
+            </div>
           </div>
         </div>
       </section>
