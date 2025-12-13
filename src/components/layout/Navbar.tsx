@@ -18,10 +18,10 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-lg border-b border-border/50 bg-background/80">
-      <div className="container mx-auto px-6 py-4">
+      <div className="container mx-auto px-6 py-5">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="font-display text-2xl font-bold">
+          <Link to="/" className="font-display text-3xl font-bold">
             <span className="text-gradient">Saifur</span>
             <span className="text-foreground"> Rehman</span>
           </Link>
@@ -33,7 +33,7 @@ const Navbar = () => {
                 key={link.path}
                 to={link.path}
                 className={cn(
-                  "nav-link font-medium",
+                  "nav-link font-medium text-base",
                   location.pathname === link.path && "active text-primary"
                 )}
               >
