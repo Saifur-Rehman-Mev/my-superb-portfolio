@@ -22,8 +22,9 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="font-display text-3xl font-bold">
-            <span className="text-gradient">Saifur</span>
-            <span className="text-foreground"> Rehman</span>
+            <span className="text-muted-foreground">&lt;</span>
+            <span className="text-gradient">SR</span>
+            <span className="text-muted-foreground">/&gt;</span>
           </Link>
 
           {/* Desktop Navigation */}

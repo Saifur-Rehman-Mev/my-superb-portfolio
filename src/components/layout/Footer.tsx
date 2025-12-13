@@ -14,9 +14,10 @@ const Footer = () => {
       <div className="container mx-auto px-6 py-12">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo */}
-          <Link to="/" className="font-display text-xl font-bold">
-            <span className="text-gradient">Saifur</span>
-            <span className="text-foreground"> Rehman</span>
+          <Link to="/" className="font-display text-2xl font-bold">
+            <span className="text-muted-foreground">&lt;</span>
+            <span className="text-gradient">SR</span>
+            <span className="text-muted-foreground">/&gt;</span>
           </Link>
 
           {/* Social Links */}
