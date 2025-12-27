@@ -1,73 +1,47 @@
-# Welcome to your Lovable project
+🧑‍🎨 Personal Portfolio Website
 
-## Project info
+This is my personal portfolio website built using React, TypeScript, and Tailwind CSS.
+It showcases my projects, skills, experience, and ways to contact me. I originally generated the base version using an AI tool and later made significant custom changes to the design and code to better match my style and requirements.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+🚀 Tech Stack
 
-## How can I edit this code?
+⚛️ React
+🧩 TypeScript
+🎨 Tailwind CSS
+🌐 Responsive design
+🔗 Deployed version available online
+🛠️ Features
 
-There are several ways of editing your application.
+Modern, clean UI
+Fully responsive layout for mobile, tablet, and desktop
+Projects section with live links & code links
+About Me section
+Skills & tools section
+Contact section / form
+Smooth scrolling and transitions
 
-**Use Lovable**
+📌 Purpose of this project
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+Showcase my development work
+Build my personal brand as a developer
+Share resume, projects, and contact details in one place
+Practice React + TypeScript + Tailwind in a real project
 
-Changes made via Lovable will be committed automatically to this repo.
+🧑‍💻 Custom Changes I Made
+Rewrote components in TypeScript
+Improved UI/UX
+Updated color theme and layout
+Added new sections and animations
+Refactored code structure and responsiveness
 
-**Use your preferred IDE**
+🌍 Live Demo
+Add your live link here: https://saifurrehmanportfolio.netlify.app/
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Screenshots :
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+<img width="1907" height="959" alt="Screenshot 2025-12-27 151923" src="https://github.com/user-attachments/assets/74ae9dd8-3f0e-4b5e-b74c-38a2392582be" />
 
-Follow these steps:
+<img width="1919" height="966" alt="Screenshot 2025-12-27 151940" src="https://github.com/user-attachments/assets/f84275b0-8eb7-4ddc-a29f-a6ccaed79880" />
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+<img width="1913" height="964" alt="Screenshot 2025-12-27 151952" src="https://github.com/user-attachments/assets/57ad993a-3446-4f15-b535-705aa862b4c8" />
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
