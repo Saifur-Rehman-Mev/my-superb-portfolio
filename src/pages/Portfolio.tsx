@@ -6,6 +6,15 @@ import { Button } from "@/components/ui/button";
 const projects = [
   {
     id: 1,
+    title: "ATELIER",
+    description: "A modern e-commerce web application with a sleek UI for browsing and purchasing products. Features product catalog, cart functionality, and seamless checkout experience.",
+    tags: ["React.js", "Next.js", "Tailwind", "E-Commerce"],
+    image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&h=600&fit=crop",
+    liveUrl: "https://vercel.com/saifur-rehman-mevs-projects/atelier",
+    githubUrl: "https://github.com/Saifur-Rehman-Mev/atelier",
+  },
+  {
+    id: 2,
     title: "HavenStay",
     description: "A full-stack hotel booking website with authorization and authentication. Users can browse hotels, make reservations, and manage their bookings securely.",
     tags: ["JavaScript", "Node.js", "Express.js", "EJS", "Tailwind"],
@@ -13,7 +22,7 @@ const projects = [
     githubUrl: "https://github.com/Saifur-Rehman-Mev/HavenStay",
   },
   {
-    id: 2,
+    id: 3,
     title: "NodeXpressDB",
     description: "A CRUD application where every user can post, update, delete, or view their data. Simple and effective data management system.",
     tags: ["JavaScript", "Node.js", "Express.js", "Bootstrap"],
@@ -21,7 +30,7 @@ const projects = [
     githubUrl: "https://github.com/Saifur-Rehman-Mev/NodeXpressDB",
   },
   {
-    id: 3,
+    id: 4,
     title: "Netflix Clone",
     description: "A Netflix clone currently under development. Building a modern streaming platform UI with React and modern web technologies.",
     tags: ["React.js", "Tailwind", "Redux Toolkit", "React Router"],
@@ -81,10 +90,18 @@ const Portfolio = () => {
                   
                   {/* Overlay Actions */}
                   <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    {project.liveUrl && (
+                      <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                        <Button size="sm" className="font-display">
+                          <ExternalLink size={16} className="mr-2" />
+                          Live Demo
+                        </Button>
+                      </a>
+                    )}
                     <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                      <Button size="sm" className="font-display">
+                      <Button size="sm" variant="outline" className="font-display bg-background/80">
                         <Github size={16} className="mr-2" />
-                        View Code
+                        Code
                       </Button>
                     </a>
                   </div>
