@@ -10,7 +10,7 @@ const projects = [
     description: "A modern e-commerce web application with a sleek UI for browsing and purchasing products. Features product catalog, cart functionality, and seamless checkout experience.",
     tags: ["React.js", "Next.js", "Tailwind", "E-Commerce"],
     image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&h=600&fit=crop",
-    liveUrl: "https://vercel.com/saifur-rehman-mevs-projects/atelier",
+    liveUrl: "https://atelier-olive-six.vercel.app/",
     githubUrl: "https://github.com/Saifur-Rehman-Mev/atelier",
   },
   {
