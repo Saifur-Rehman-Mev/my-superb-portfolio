@@ -164,14 +164,23 @@ const Freelance = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
                   
+                  {/* In Progress Badge */}
+                  {project.inProgress && (
+                    <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-primary/90 text-primary-foreground text-sm font-medium">
+                      In Progress
+                    </div>
+                  )}
+                  
                   {/* Overlay Actions */}
                   <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                      <Button size="sm" className="font-display">
-                        <ExternalLink size={16} className="mr-2" />
-                        Visit Site
-                      </Button>
-                    </a>
+                    {project.liveUrl && (
+                      <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                        <Button size="sm" className="font-display">
+                          <ExternalLink size={16} className="mr-2" />
+                          Visit Site
+                        </Button>
+                      </a>
+                    )}
                   </div>
                 </div>
                 
