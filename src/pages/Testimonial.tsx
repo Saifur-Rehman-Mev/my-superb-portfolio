@@ -14,6 +14,33 @@ const testimonials = [
     content:
       "Saifur did an outstanding job developing our website for Central Auto Zone Auto Service & Sales here in Calgary. From the beginning, he clearly understood our business needs and delivered a clean, modern, and fully functional website. Communication was smooth, timelines were respected, and every requested change was handled quickly and professionally. We're extremely happy with the final result and highly recommend Saifur to anyone looking for reliable and high-quality web development services.",
   },
+  {
+    id: 2,
+    name: "Omkar Patel",
+    role: "Owner, Vikrant Machinery Pvt Ltd",
+    location: "India",
+    rating: 5,
+    content:
+      "Working with Saifur was a fantastic experience. He built a professional and polished website for Vikrant Machinery that perfectly represents our brand. He was responsive, detail-oriented, and completed the project on time. I really appreciate his dedication and highly recommend him to anyone looking for a skilled and reliable web developer.",
+  },
+  {
+    id: 3,
+    name: "Jyoti Bharwad",
+    role: "Owner, Vijay Machinery",
+    location: "India",
+    rating: 5,
+    content:
+      "Saifur is an excellent developer who truly understands client requirements. He has been handling our website and digital presence professionally. His work ethic, communication, and technical skills are impressive. I'm very happy with the progress and would confidently recommend him for web development work.",
+  },
+  {
+    id: 4,
+    name: "Krish Choudhary",
+    role: "Client",
+    location: "India",
+    rating: 5,
+    content:
+      "I have been giving projects to Saifur every month and he consistently delivers excellent work. He is reliable, communicates well, and always meets deadlines. His problem-solving skills and commitment to quality make him my go-to developer for ongoing work.",
+  },
 ];
 
 const Testimonial = () => {
