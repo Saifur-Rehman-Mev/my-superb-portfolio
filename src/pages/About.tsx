@@ -15,6 +15,12 @@ const skills = [
 
 const experience = [
   {
+    title: "Web Developer & Digital Coordinator",
+    company: "Vijay Machinery",
+    period: "May 2026 - Present",
+    description: "Managing website development, digital presence, and coordinating online strategies for an industrial machinery company.",
+  },
+  {
     title: "Freelance Web Developer",
     company: "Self-Employed",
     period: "July 2025 - Present",

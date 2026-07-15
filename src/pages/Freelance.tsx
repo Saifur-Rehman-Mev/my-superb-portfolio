@@ -7,6 +7,22 @@ import { Button } from "@/components/ui/button";
 const freelanceProjects = [
   {
     id: 1,
+    title: "Vikrant Machinery Pvt Ltd",
+    description: "A professional corporate website for an industrial machinery company. Features company profile, product showcase, and inquiry functionality.",
+    tags: ["React", "Next.js", "Tailwind", "CMS"],
+    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop",
+    liveUrl: "https://vikrantmachinery.com/",
+  },
+  {
+    id: 2,
+    title: "Vijay Machinery",
+    description: "Industrial machinery company website currently under development. Will feature product catalog, client portal, and business inquiry system.",
+    tags: ["React", "Next.js", "Tailwind", "Under Development"],
+    image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&h=600&fit=crop",
+    inProgress: true,
+  },
+  {
+    id: 3,
     title: "Central Auto Zone",
     description: "A professional auto parts e-commerce website with product catalog, search functionality, and modern UI.",
     tags: ["TypeScript", "React", "Supabase", "Auth.js"],
