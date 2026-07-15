@@ -37,21 +37,66 @@ const About = () => {
       <section className="py-24 relative z-10">
         <div className="container mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Image */}
+            {/* Developer Visual */}
             <div className="relative animate-slide-up">
-              <div className="relative rounded-2xl overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=700&fit=crop"
-                  alt="Saifur Rehman"
-                  className="w-full h-auto object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
-              </div>
-              
-              {/* Floating badge */}
-              <div className="absolute -bottom-6 -right-6 glass-card rounded-2xl p-6 animate-float">
-                <p className="text-4xl font-display font-bold text-gradient">5+</p>
-                <p className="text-muted-foreground">Months Experience</p>
+              <div className="glass-card rounded-3xl p-8 lg:p-12 relative overflow-hidden">
+                {/* Background glow */}
+                <div className="absolute -top-20 -right-20 w-64 h-64 rounded-full bg-primary/10 blur-3xl" />
+                <div className="absolute -bottom-20 -left-20 w-64 h-64 rounded-full bg-primary/10 blur-3xl" />
+                
+                {/* Code Editor Mockup */}
+                <div className="relative z-10 bg-secondary/80 rounded-2xl overflow-hidden border border-border/50 shadow-2xl">
+                  {/* Editor Header */}
+                  <div className="flex items-center gap-2 px-4 py-3 bg-secondary border-b border-border/50">
+                    <div className="w-3 h-3 rounded-full bg-red-500/80" />
+                    <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
+                    <div className="w-3 h-3 rounded-full bg-green-500/80" />
+                    <span className="ml-4 text-xs text-muted-foreground font-mono">about.tsx</span>
+                  </div>
+                  
+                  {/* Code Content */}
+                  <div className="p-6 font-mono text-sm leading-relaxed">
+                    <div className="flex gap-4">
+                      <div className="text-muted-foreground/50 select-none">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                        <p>5</p>
+                        <p>6</p>
+                        <p>7</p>
+                        <p>8</p>
+                        <p>9</p>
+                        <p>10</p>
+                        <p>11</p>
+                        <p>12</p>
+                      </div>
+                      <div className="text-foreground/80">
+                        <p><span className="text-purple-400">const</span> <span className="text-blue-400">developer</span> = {'{'}</p>
+                        <p className="pl-4"><span className="text-cyan-400">name</span>: <span className="text-green-400">"Saifur Rehman"</span>,</p>
+                        <p className="pl-4"><span className="text-cyan-400">role</span>: <span className="text-green-400">"Web Developer"</span>,</p>
+                        <p className="pl-4"><span className="text-cyan-400">experience</span>: <span className="text-orange-400">"5+ months"</span>,</p>
+                        <p className="pl-4"><span className="text-cyan-400">skills</span>: [<span className="text-green-400">"React"</span>, <span className="text-green-400">"Node.js"</span>],</p>
+                        <p className="pl-4"><span className="text-cyan-400">passion</span>: <span className="text-green-400">"Building things"</span>,</p>
+                        <p className="pl-4"><span className="text-cyan-400">location</span>: <span className="text-green-400">"Ahmedabad, India"</span>,</p>
+                        <p>{'}'}</p>
+                        <p className="mt-2"><span className="text-purple-400">export default</span> <span className="text-blue-400">developer</span>;</p>
+                        <p className="mt-4 text-muted-foreground/60">// Turning ideas into code</p>
+                        <p className="text-muted-foreground/60">// and code into experiences</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Floating badges */}
+                <div className="absolute -top-4 -right-4 glass-card rounded-2xl p-4 animate-float">
+                  <p className="text-2xl font-display font-bold text-gradient">5+</p>
+                  <p className="text-muted-foreground text-xs">Months Experience</p>
+                </div>
+                <div className="absolute -bottom-4 -left-4 glass-card rounded-2xl p-4 animate-float-delayed">
+                  <p className="text-2xl font-display font-bold text-gradient">10+</p>
+                  <p className="text-muted-foreground text-xs">Projects Done</p>
+                </div>
               </div>
             </div>
             
