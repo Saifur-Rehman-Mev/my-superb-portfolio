@@ -16,7 +16,7 @@ const skills = [
 const experience = [
   {
     title: "Web Developer & Digital Coordinator",
-    company: "Vijay Machinery",
+    company: "Vijay Machinery Pvt. Ltd.",
     period: "May 2026 - Present",
     description: "Managing website development, digital presence, and coordinating online strategies for an industrial machinery company.",
   },
