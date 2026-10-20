@@ -1,0 +1,1 @@
+Project and client-feedback entries use explicit status labels; pending testimonials must not display attributed quotes until confirmed, so public claims remain accurate.

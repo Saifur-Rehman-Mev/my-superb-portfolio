@@ -41,6 +41,14 @@ const testimonials = [
     content:
       "I have been giving projects to Saifur every month and he consistently delivers excellent work. He is reliable, communicates well, and always meets deadlines. His problem-solving skills and commitment to quality make him my go-to developer for ongoing work.",
   },
+  {
+    id: 5,
+    name: "Yogesh Murthy",
+    role: "Owner, Shiva Machine Tools",
+    rating: 0,
+    content: "",
+    pending: true,
+  },
 ];
 
 const Testimonial = () => {
@@ -82,20 +90,28 @@ const Testimonial = () => {
                 </div>
 
                 {/* Rating */}
-                <div className="flex gap-1 mb-6">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star
-                      key={i}
-                      size={24}
-                      className="fill-primary text-primary"
-                    />
-                  ))}
-                </div>
+                {!testimonial.pending && (
+                  <div className="flex gap-1 mb-6">
+                    {[...Array(testimonial.rating)].map((_, i) => (
+                      <Star
+                        key={i}
+                        size={24}
+                        className="fill-primary text-primary"
+                      />
+                    ))}
+                  </div>
+                )}
 
                 {/* Content */}
-                <blockquote className="text-lg lg:text-xl text-foreground/90 leading-relaxed mb-8 relative z-10">
-                  "{testimonial.content}"
-                </blockquote>
+                {testimonial.pending ? (
+                  <p className="text-muted-foreground mb-8 relative z-10">
+                    Review pending confirmation.
+                  </p>
+                ) : (
+                  <blockquote className="text-lg lg:text-xl text-foreground/90 leading-relaxed mb-8 relative z-10">
+                    "{testimonial.content}"
+                  </blockquote>
+                )}
 
                 {/* Author */}
                 <div className="flex items-center gap-4">
