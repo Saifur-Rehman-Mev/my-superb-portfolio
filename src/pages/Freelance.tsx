@@ -4,7 +4,16 @@ import Layout from "@/components/layout/Layout";
 import FloatingShapes from "@/components/ui/FloatingShapes";
 import { Button } from "@/components/ui/button";
 
-const freelanceProjects = [
+const freelanceProjects: Array<{
+  id: number;
+  title: string;
+  description: string;
+  tags: string[];
+  image: string;
+  liveUrl?: string;
+  inProgress?: boolean;
+  status?: string;
+}> = [
   {
     id: 1,
     title: "Vikrant Machinery Pvt Ltd",
@@ -28,6 +37,24 @@ const freelanceProjects = [
     tags: ["TypeScript", "React", "Supabase", "Auth.js"],
     image: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800&h=600&fit=crop",
     liveUrl: "https://centralautozone.com/",
+    status: "Currently in redevelopment",
+  },
+  {
+    id: 4,
+    title: "Shiva Machine Tools",
+    description: "Website project for Shiva Machine Tools.",
+    tags: ["Website", "Machine Tools"],
+    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop",
+    liveUrl: "https://www.smtbangalore.com/",
+  },
+  {
+    id: 5,
+    title: "RIG Tools Centre",
+    description: "Website project for RIG Tools Centre.",
+    tags: ["Website", "Machine Tools"],
+    image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&h=600&fit=crop",
+    liveUrl: "https://www.rigtoolscenter.com/",
+    status: "Under testing phase",
   },
 ];
 
@@ -165,9 +192,9 @@ const Freelance = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
                   
                   {/* In Progress Badge */}
-                  {project.inProgress && (
+                  {(project.status || project.inProgress) && (
                     <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-primary/90 text-primary-foreground text-sm font-medium">
-                      In Progress
+                      {project.status || "In Progress"}
                     </div>
                   )}
                   
