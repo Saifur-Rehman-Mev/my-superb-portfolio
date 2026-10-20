@@ -34,7 +34,7 @@ const testimonials: Array<{
   {
     id: 3,
     name: "Jyoti Bharwad",
-    role: "Owner, Vijay Machinery",
+    role: "Owner, Vijay Machinery Pvt. Ltd.",
     location: "India",
     rating: 5,
     content:
