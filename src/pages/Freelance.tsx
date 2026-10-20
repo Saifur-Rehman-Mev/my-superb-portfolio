@@ -4,7 +4,16 @@ import Layout from "@/components/layout/Layout";
 import FloatingShapes from "@/components/ui/FloatingShapes";
 import { Button } from "@/components/ui/button";
 
-const freelanceProjects = [
+const freelanceProjects: Array<{
+  id: number;
+  title: string;
+  description: string;
+  tags: string[];
+  image: string;
+  liveUrl?: string;
+  inProgress?: boolean;
+  status?: string;
+}> = [
   {
     id: 1,
     title: "Vikrant Machinery Pvt Ltd",

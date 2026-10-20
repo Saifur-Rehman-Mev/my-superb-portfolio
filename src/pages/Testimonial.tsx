@@ -4,7 +4,15 @@ import Layout from "@/components/layout/Layout";
 import FloatingShapes from "@/components/ui/FloatingShapes";
 import { Button } from "@/components/ui/button";
 
-const testimonials = [
+const testimonials: Array<{
+  id: number;
+  name: string;
+  role: string;
+  location?: string;
+  rating: number;
+  content: string;
+  pending?: boolean;
+}> = [
   {
     id: 1,
     name: "Abdul Ghaffar",
